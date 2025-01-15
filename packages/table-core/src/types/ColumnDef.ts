@@ -104,7 +104,7 @@ export type ColumnDefBase<
   //       : never)
   // > &
   ExtractFeatureTypes<'ColumnDef', TFeatures> &
-  ColumnDef_Plugins<TFeatures, TData, TValue>
+  ColumnDef_Plugins<TFeatures & { Data: TData }, TData, TValue>
 
 export type ColumnDefBase_All<
   TFeatures extends TableFeatures,

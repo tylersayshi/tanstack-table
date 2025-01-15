@@ -56,6 +56,10 @@ function App() {
          * (otherwise, defaults to the value derived from accessorKey / accessorFn)
          */
         getGroupingValue: (row) => `${row.firstName} ${row.lastName}`,
+        // helloWorld: {
+        //   features: {},
+        //   data: {}
+        // }
       },
       {
         accessorFn: (row) => row.lastName,
